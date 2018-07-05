@@ -1,4 +1,4 @@
-struct Hero {
+struct Hero: Decodable {
     let id: Int
     let name: String
     let localizedName: String
@@ -7,53 +7,34 @@ struct Hero {
     let roles: [String]
     let legs: Int
 
-    init?(JSON: [String: Any]) {
-        guard let id = JSON["id"] as? Int, id > 0 else {
-            return nil
-        }
-
-        guard let name = JSON["name"] as? String, !name.isEmpty else {
-            return nil
-        }
-
-        guard let localizedName = JSON["localized_name"] as? String else {
-            return nil
-        }
-
-        guard let primaryAttributeString = JSON["primary_attr"] as? String,
-            let primaryAttribute = Attribute(rawValue: primaryAttributeString) else {
-                return nil
-        }
-
-        guard let attackTypeString = JSON["attack_type"] as? String,
-            let attackType = AttackType(rawValue: attackTypeString) else {
-                return nil
-        }
-
-        guard let roles = JSON["roles"] as? [String] else {
-            return nil
-        }
-
-        guard let legs = JSON["legs"] as? Int else {
-            return nil
-        }
-
-        self.id = id
-        self.name = name
-        self.localizedName = localizedName
-        self.primaryAttribute = primaryAttribute
-        self.attackType = attackType
-        self.roles = roles
-        self.legs = legs
+    enum CodingKeys: String, CodingKey {
+        case id
+        case name
+        case localizedName = "localized_name"
+        case primaryAttribute = "primary_attr"
+        case attackType = "attack_type"
+        case roles
+        case legs
     }
 
-    enum Attribute: String {
+    init(from decoder: Decoder) throws {
+        let values = try decoder.container(keyedBy: CodingKeys.self)
+        id = try values.decode(Int.self, forKey: .id)
+        name = try values.decode(String.self, forKey: .name)
+        localizedName = try values.decode(String.self, forKey: .localizedName)
+        primaryAttribute = try values.decode(Attribute.self, forKey: .primaryAttribute)
+        attackType = try values.decode(AttackType.self, forKey: .attackType)
+        roles = try values.decode([String].self, forKey: .roles)
+        legs = try values.decode(Int.self, forKey: .legs)
+    }
+
+    enum Attribute: String, Decodable {
         case agi
         case str
         case int
     }
 
-    enum AttackType: String {
+    enum AttackType: String, Decodable {
         case melee = "Melee"
         case ranged = "Ranged"
     }
