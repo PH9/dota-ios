@@ -8,13 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		5745DDB73C77FFAA62913D88 /* Pods_dota.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E477CD6D5BED5A4C454C27DA /* Pods_dota.framework */; };
+		65186D8320EDD3A30043F937 /* HeroTests.json in Resources */ = {isa = PBXBuildFile; fileRef = 65186D8120EDD3990043F937 /* HeroTests.json */; };
 		65186D8720EDD44B0043F937 /* JSONFileReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65186D8620EDD44B0043F937 /* JSONFileReader.swift */; };
+		655772F020EB6022005BC2D8 /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655772EF20EB6022005BC2D8 /* Hero.swift */; };
+		655772F220EB613D005BC2D8 /* HeroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655772F120EB613D005BC2D8 /* HeroTests.swift */; };
 		65970F8020EB5D0A00EAF5D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65970F7F20EB5D0A00EAF5D1 /* AppDelegate.swift */; };
 		65970F8220EB5D0A00EAF5D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65970F8120EB5D0A00EAF5D1 /* ViewController.swift */; };
 		65970F8520EB5D0A00EAF5D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65970F8320EB5D0A00EAF5D1 /* Main.storyboard */; };
 		65970F8720EB5D0D00EAF5D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65970F8620EB5D0D00EAF5D1 /* Assets.xcassets */; };
 		65970F8A20EB5D0D00EAF5D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65970F8820EB5D0D00EAF5D1 /* LaunchScreen.storyboard */; };
-		65970F9520EB5D0D00EAF5D1 /* dotaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65970F9420EB5D0D00EAF5D1 /* dotaTests.swift */; };
 		8614C2F7B0774FFD912FF004 /* Pods_dotaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 403965DED36BFF15B6836A67 /* Pods_dotaTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,7 +32,10 @@
 
 /* Begin PBXFileReference section */
 		403965DED36BFF15B6836A67 /* Pods_dotaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dotaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65186D8120EDD3990043F937 /* HeroTests.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = HeroTests.json; sourceTree = "<group>"; };
 		65186D8620EDD44B0043F937 /* JSONFileReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONFileReader.swift; sourceTree = "<group>"; };
+		655772EF20EB6022005BC2D8 /* Hero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
+		655772F120EB613D005BC2D8 /* HeroTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroTests.swift; sourceTree = "<group>"; };
 		65970F7C20EB5D0A00EAF5D1 /* dota.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dota.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65970F7F20EB5D0A00EAF5D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65970F8120EB5D0A00EAF5D1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -39,7 +44,6 @@
 		65970F8920EB5D0D00EAF5D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		65970F8B20EB5D0D00EAF5D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65970F9020EB5D0D00EAF5D1 /* dotaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = dotaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		65970F9420EB5D0D00EAF5D1 /* dotaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dotaTests.swift; sourceTree = "<group>"; };
 		65970F9620EB5D0D00EAF5D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		862A04EB63280BF72C6FAEDC /* Pods-dota.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dota.debug.xcconfig"; path = "Pods/Target Support Files/Pods-dota/Pods-dota.debug.xcconfig"; sourceTree = "<group>"; };
 		8AA26901A6BA4E7D87632464 /* Pods-dota.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dota.release.xcconfig"; path = "Pods/Target Support Files/Pods-dota/Pods-dota.release.xcconfig"; sourceTree = "<group>"; };
@@ -104,6 +108,16 @@
 			path = TestUtils;
 			sourceTree = "<group>";
 		};
+		655772EE20EB6017005BC2D8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				655772EF20EB6022005BC2D8 /* Hero.swift */,
+				65186D8120EDD3990043F937 /* HeroTests.json */,
+				655772F120EB613D005BC2D8 /* HeroTests.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		65970F7320EB5D0A00EAF5D1 = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				65186D8420EDD4250043F937 /* Library */,
+				655772EE20EB6017005BC2D8 /* Model */,
 				65970F7F20EB5D0A00EAF5D1 /* AppDelegate.swift */,
 				65970F8120EB5D0A00EAF5D1 /* ViewController.swift */,
 				65970F8320EB5D0A00EAF5D1 /* Main.storyboard */,
@@ -141,7 +156,6 @@
 		65970F9320EB5D0D00EAF5D1 /* dotaTests */ = {
 			isa = PBXGroup;
 			children = (
-				65970F9420EB5D0D00EAF5D1 /* dotaTests.swift */,
 				65970F9620EB5D0D00EAF5D1 /* Info.plist */,
 			);
 			path = dotaTests;
@@ -242,6 +256,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65186D8320EDD3A30043F937 /* HeroTests.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,6 +344,7 @@
 			files = (
 				65970F8220EB5D0A00EAF5D1 /* ViewController.swift in Sources */,
 				65970F8020EB5D0A00EAF5D1 /* AppDelegate.swift in Sources */,
+				655772F020EB6022005BC2D8 /* Hero.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,8 +352,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65970F9520EB5D0D00EAF5D1 /* dotaTests.swift in Sources */,
 				65186D8720EDD44B0043F937 /* JSONFileReader.swift in Sources */,
+				655772F220EB613D005BC2D8 /* HeroTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
