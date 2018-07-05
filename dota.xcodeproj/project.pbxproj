@@ -155,6 +155,7 @@
 			buildConfigurationList = 65970F9920EB5D0D00EAF5D1 /* Build configuration list for PBXNativeTarget "dota" */;
 			buildPhases = (
 				FD310946B6DE739B0A2FA420 /* [CP] Check Pods Manifest.lock */,
+				655772F320EB68BD005BC2D8 /* SwiftLint */,
 				65970F7820EB5D0A00EAF5D1 /* Sources */,
 				65970F7920EB5D0A00EAF5D1 /* Frameworks */,
 				65970F7A20EB5D0A00EAF5D1 /* Resources */,
@@ -264,6 +265,24 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-dota/Pods-dota-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		655772F320EB68BD005BC2D8 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 		C79F8C42BFC156EEB44D7DF5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
