@@ -1,3 +1,16 @@
-PODFILE CHECKSUM: d1acb5a84bf22af403dbd05b61d57b4ba753eb0e
+PODS:
+  - netfox (1.11.1)
+
+DEPENDENCIES:
+  - netfox
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - netfox
+
+SPEC CHECKSUMS:
+  netfox: 5230196df3ca093a9418e079eb6e8f3776f15d14
+
+PODFILE CHECKSUM: 65fd1285dd09ffb066a0e5b498ca23b8219acbda
 
 COCOAPODS: 1.5.3

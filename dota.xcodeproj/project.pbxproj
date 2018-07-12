@@ -207,6 +207,7 @@
 				65970F7920EB5D0A00EAF5D1 /* Frameworks */,
 				65970F7A20EB5D0A00EAF5D1 /* Resources */,
 				654D78E220F6F2A300C72544 /* Carthage */,
+				7E7C8A62D029D1197B533FE0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -225,6 +226,7 @@
 				65970F8C20EB5D0D00EAF5D1 /* Sources */,
 				65970F8D20EB5D0D00EAF5D1 /* Frameworks */,
 				65970F8E20EB5D0D00EAF5D1 /* Resources */,
+				6CC4CB9B0E9F48DF18A00DE2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -316,6 +318,42 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+		6CC4CB9B0E9F48DF18A00DE2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-dota-dotaTests/Pods-dota-dotaTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/netfox/netfox.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/netfox.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-dota-dotaTests/Pods-dota-dotaTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E7C8A62D029D1197B533FE0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-dota/Pods-dota-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/netfox/netfox.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/netfox.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-dota/Pods-dota-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 		C79F8C42BFC156EEB44D7DF5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -590,7 +628,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.silom313.dotaTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/dota.app/dota";
 			};
@@ -616,7 +654,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.silom313.dotaTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/dota.app/dota";
 			};
