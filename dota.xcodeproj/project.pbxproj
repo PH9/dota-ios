@@ -10,6 +10,8 @@
 		5745DDB73C77FFAA62913D88 /* Pods_dota.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E477CD6D5BED5A4C454C27DA /* Pods_dota.framework */; };
 		65186D8320EDD3A30043F937 /* HeroTests.json in Resources */ = {isa = PBXBuildFile; fileRef = 65186D8120EDD3990043F937 /* HeroTests.json */; };
 		65186D8720EDD44B0043F937 /* JSONFileReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65186D8620EDD44B0043F937 /* JSONFileReader.swift */; };
+		654D78E420F6F2E600C72544 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 654D78E320F6F2E500C72544 /* Alamofire.framework */; };
+		654D78E620F6F2F000C72544 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 654D78E520F6F2F000C72544 /* ObjectMapper.framework */; };
 		655772F020EB6022005BC2D8 /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655772EF20EB6022005BC2D8 /* Hero.swift */; };
 		655772F220EB613D005BC2D8 /* HeroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655772F120EB613D005BC2D8 /* HeroTests.swift */; };
 		658FB2A420EDFEE800D6E184 /* Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658FB2A320EDFEE800D6E184 /* Decodable.swift */; };
@@ -18,6 +20,7 @@
 		65970F8520EB5D0A00EAF5D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65970F8320EB5D0A00EAF5D1 /* Main.storyboard */; };
 		65970F8720EB5D0D00EAF5D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65970F8620EB5D0D00EAF5D1 /* Assets.xcassets */; };
 		65970F8A20EB5D0D00EAF5D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65970F8820EB5D0D00EAF5D1 /* LaunchScreen.storyboard */; };
+		65C21325617D43E1683E4B4E /* Pods_dota_dotaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B910134F0DA517E1C54D8B1C /* Pods_dota_dotaTests.framework */; };
 		8614C2F7B0774FFD912FF004 /* Pods_dotaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 403965DED36BFF15B6836A67 /* Pods_dotaTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +38,8 @@
 		403965DED36BFF15B6836A67 /* Pods_dotaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dotaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		65186D8120EDD3990043F937 /* HeroTests.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = HeroTests.json; sourceTree = "<group>"; };
 		65186D8620EDD44B0043F937 /* JSONFileReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONFileReader.swift; sourceTree = "<group>"; };
+		654D78E320F6F2E500C72544 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		654D78E520F6F2F000C72544 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
 		655772EF20EB6022005BC2D8 /* Hero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
 		655772F120EB613D005BC2D8 /* HeroTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroTests.swift; sourceTree = "<group>"; };
 		658FB2A320EDFEE800D6E184 /* Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decodable.swift; sourceTree = "<group>"; };
@@ -47,11 +52,14 @@
 		65970F8B20EB5D0D00EAF5D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65970F9020EB5D0D00EAF5D1 /* dotaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = dotaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		65970F9620EB5D0D00EAF5D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		847633A8F96D7F55CD040597 /* Pods-dota-dotaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dota-dotaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-dota-dotaTests/Pods-dota-dotaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		862A04EB63280BF72C6FAEDC /* Pods-dota.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dota.debug.xcconfig"; path = "Pods/Target Support Files/Pods-dota/Pods-dota.debug.xcconfig"; sourceTree = "<group>"; };
 		8AA26901A6BA4E7D87632464 /* Pods-dota.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dota.release.xcconfig"; path = "Pods/Target Support Files/Pods-dota/Pods-dota.release.xcconfig"; sourceTree = "<group>"; };
 		9E077B17A09D5AD612276CA6 /* Pods-dotaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dotaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-dotaTests/Pods-dotaTests.release.xcconfig"; sourceTree = "<group>"; };
+		B910134F0DA517E1C54D8B1C /* Pods_dota_dotaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dota_dotaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E477CD6D5BED5A4C454C27DA /* Pods_dota.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dota.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E66F88342440DF184FC74C58 /* Pods-dotaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dotaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-dotaTests/Pods-dotaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FCE5E1B1B200E94FD95B9BD8 /* Pods-dota-dotaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dota-dotaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-dota-dotaTests/Pods-dota-dotaTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +67,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				654D78E620F6F2F000C72544 /* ObjectMapper.framework in Frameworks */,
+				654D78E420F6F2E600C72544 /* Alamofire.framework in Frameworks */,
 				5745DDB73C77FFAA62913D88 /* Pods_dota.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -68,6 +78,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8614C2F7B0774FFD912FF004 /* Pods_dotaTests.framework in Frameworks */,
+				65C21325617D43E1683E4B4E /* Pods_dota_dotaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,8 +88,11 @@
 		56C05F08A25AB203CD75B4CC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				654D78E520F6F2F000C72544 /* ObjectMapper.framework */,
+				654D78E320F6F2E500C72544 /* Alamofire.framework */,
 				E477CD6D5BED5A4C454C27DA /* Pods_dota.framework */,
 				403965DED36BFF15B6836A67 /* Pods_dotaTests.framework */,
+				B910134F0DA517E1C54D8B1C /* Pods_dota_dotaTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -90,6 +104,8 @@
 				8AA26901A6BA4E7D87632464 /* Pods-dota.release.xcconfig */,
 				E66F88342440DF184FC74C58 /* Pods-dotaTests.debug.xcconfig */,
 				9E077B17A09D5AD612276CA6 /* Pods-dotaTests.release.xcconfig */,
+				847633A8F96D7F55CD040597 /* Pods-dota-dotaTests.debug.xcconfig */,
+				FCE5E1B1B200E94FD95B9BD8 /* Pods-dota-dotaTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -176,7 +192,7 @@
 				65970F7820EB5D0A00EAF5D1 /* Sources */,
 				65970F7920EB5D0A00EAF5D1 /* Frameworks */,
 				65970F7A20EB5D0A00EAF5D1 /* Resources */,
-				459B69E7F7533B38A1BB0F5F /* [CP] Embed Pods Frameworks */,
+				654D78E220F6F2A300C72544 /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -266,36 +282,30 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		459B69E7F7533B38A1BB0F5F /* [CP] Embed Pods Frameworks */ = {
+		654D78E220F6F2A300C72544 /* Carthage */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-dota/Pods-dota-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			name = Carthage;
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Alamofire.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-dota/Pods-dota-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
 		};
 		655772F320EB68BD005BC2D8 /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 			);
 			name = SwiftLint;
-			outputFileListPaths = (
-			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -313,7 +323,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-dotaTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-dota-dotaTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -511,6 +521,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4F3TR5RP66;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = dota/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -529,6 +544,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4F3TR5RP66;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = dota/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -543,11 +563,12 @@
 		};
 		65970F9D20EB5D0D00EAF5D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E66F88342440DF184FC74C58 /* Pods-dotaTests.debug.xcconfig */;
+			baseConfigurationReference = 847633A8F96D7F55CD040597 /* Pods-dota-dotaTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4F3TR5RP66;
 				INFOPLIST_FILE = dotaTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -564,11 +585,12 @@
 		};
 		65970F9E20EB5D0D00EAF5D1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9E077B17A09D5AD612276CA6 /* Pods-dotaTests.release.xcconfig */;
+			baseConfigurationReference = FCE5E1B1B200E94FD95B9BD8 /* Pods-dota-dotaTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4F3TR5RP66;
 				INFOPLIST_FILE = dotaTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
