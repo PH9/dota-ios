@@ -4,23 +4,19 @@ import OHHTTPStubs
 
 class HeroPresenterTests: XCTestCase {
 
-    class MockRepsonseder: HeroesPresenterProtocol {
+    class SpyHeroPresenterProtocol: HeroesPresenterProtocol {
 
-        var error: Error?
-        var expectation: XCTestExpectation?
-
+        var successExpectation: XCTestExpectation?
         func heroes(didFinishedWithSuccess heroes: [Hero]) {
-            expectation?.fulfill()
-            XCTAssertNotNil(heroes)
+            successExpectation?.fulfill()
             XCTAssertEqual(heroes.count, 2)
         }
 
         func heroes(didFinishedWithError error: Error) {
-            self.error = error
         }
     }
 
-    func testGetHero() {
+    func test_GetHero_success() {
         let condition: OHHTTPStubsTestBlock = isHost("api.opendota.com")
             && isPath("/api/heroes")
             && isMethodGET()
@@ -28,13 +24,15 @@ class HeroPresenterTests: XCTestCase {
             let stubPath = OHPathForFile("Heroes.json", type(of: self))!
             return OHHTTPStubsResponse(fileAtPath: stubPath, statusCode:200, headers:["Content-Type":"application/json"])
         }
+
         let expectation = self.expectation(description: "alamofire request expectation")
-        let mockRepsonseder = MockRepsonseder()
-        mockRepsonseder.expectation = expectation
+        let spyHeroProtocol = SpyHeroPresenterProtocol()
+        spyHeroProtocol.successExpectation = expectation
+
         let presenter = HeroesPresenter()
-        presenter.delegate = mockRepsonseder
+        presenter.delegate = spyHeroProtocol
         presenter.getHeros()
 
-        waitForExpectations(timeout: 10.0, handler: nil)
+        waitForExpectations(timeout: 3, handler: nil)
     }
 }
