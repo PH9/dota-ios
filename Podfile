@@ -1,7 +1,7 @@
 platform :ios, '9.0'
+use_frameworks!
 
 target 'dota' do
-  use_frameworks!
 
   target 'dotaTests' do
   end

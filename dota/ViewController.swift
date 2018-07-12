@@ -1,18 +1,30 @@
-//
-//  ViewController.swift
-//  dota
-//
-//  Created by Wasith Theerapattrathamrong on 3/7/2561 BE.
-//  Copyright © 2561 Wasith Theerapattrathamrong. All rights reserved.
-//
-
 import UIKit
 
-class ViewController: UIViewController {
+final internal class ViewController: UIViewController {
+
+    @IBOutlet weak var textView: UITextView!
+
+    let heroPresenter = HeroesPresenter()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        heroPresenter.delegate = self
+        textView.text = "Loading..."
+        heroPresenter.getHeros()
+    }
+}
+
+extension ViewController: HeroesPresenterProtocol {
+    func heroes(didFinishedWithSuccess heroes: [Hero]) {
+        DispatchQueue.main.async {
+            self.textView.text = heroes.debugDescription
+            print(heroes.count)
+        }
     }
 
+    func heroes(didFinishedWithError error: Error) {
+        DispatchQueue.main.async {
+            self.textView.text = error.localizedDescription
+        }
+    }
 }
