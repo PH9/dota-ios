@@ -19,10 +19,21 @@ final class HeroesPresenter {
             return
         }
 
-        if let data = response.data {
-            let heroes = try! JSONDecoder().decode([Hero].self, from: data)
-            self.delegate?.heroes(didFinishedWithSuccess: heroes)
+        guard 200 ..< 300 ~= (response.response?.statusCode ?? 0) else {
+            self.delegate?.heroes(didFinishedWithError: APIServiceError.unacceptableHTTPStatus)
             return
         }
+
+        guard let data = response.data else {
+            self.delegate?.heroes(didFinishedWithError: APIServiceError.responseDataNotFound)
+            return
+        }
+
+        guard let heroes = try? JSONDecoder().decode([Hero].self, from: data) else {
+            self.delegate?.heroes(didFinishedWithError: APIServiceError.couldNotParseJSONValue)
+            return
+        }
+
+        self.delegate?.heroes(didFinishedWithSuccess: heroes)
     }
 }

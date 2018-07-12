@@ -26,6 +26,7 @@
 		65970F8A20EB5D0D00EAF5D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65970F8820EB5D0D00EAF5D1 /* LaunchScreen.storyboard */; };
 		65A9F8EF20F71346004748D3 /* Pods_dota_dotaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65A9F8EE20F71346004748D3 /* Pods_dota_dotaTests.framework */; };
 		65A9F8F220F71420004748D3 /* Heroes.json in Resources */ = {isa = PBXBuildFile; fileRef = 65A9F8F020F7141A004748D3 /* Heroes.json */; };
+		65F7C17820F751FD0071CC11 /* APIServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F7C17720F751FD0071CC11 /* APIServiceError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		65970F9620EB5D0D00EAF5D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65A9F8EE20F71346004748D3 /* Pods_dota_dotaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_dota_dotaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		65A9F8F020F7141A004748D3 /* Heroes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Heroes.json; sourceTree = "<group>"; };
+		65F7C17720F751FD0071CC11 /* APIServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceError.swift; sourceTree = "<group>"; };
 		847633A8F96D7F55CD040597 /* Pods-dota-dotaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dota-dotaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-dota-dotaTests/Pods-dota-dotaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		862A04EB63280BF72C6FAEDC /* Pods-dota.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dota.debug.xcconfig"; path = "Pods/Target Support Files/Pods-dota/Pods-dota.debug.xcconfig"; sourceTree = "<group>"; };
 		8AA26901A6BA4E7D87632464 /* Pods-dota.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dota.release.xcconfig"; path = "Pods/Target Support Files/Pods-dota/Pods-dota.release.xcconfig"; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 		654B6AF320F6FF9C00430992 /* Request */ = {
 			isa = PBXGroup;
 			children = (
+				65F7C17720F751FD0071CC11 /* APIServiceError.swift */,
 				65A9F8F020F7141A004748D3 /* Heroes.json */,
 				654B6AF620F700E900430992 /* HeroesPresenter.swift */,
 				654671F620F70B5C007ECFB6 /* HeroPresenterTests.swift */,
@@ -403,6 +406,7 @@
 				658FB2A420EDFEE800D6E184 /* Decodable.swift in Sources */,
 				65970F8020EB5D0A00EAF5D1 /* AppDelegate.swift in Sources */,
 				655772F020EB6022005BC2D8 /* Hero.swift in Sources */,
+				65F7C17820F751FD0071CC11 /* APIServiceError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
