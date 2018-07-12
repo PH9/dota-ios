@@ -1,2 +1,4 @@
-excluded: 
+excluded:
   - Pods/
+  - Carthage/
+  - Frameworks/
