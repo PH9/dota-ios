@@ -1,4 +1,6 @@
 import UIKit
+import Fabric
+import Crashlytics
 #if DEBUG
 import netfox
 #endif
@@ -13,6 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         #if DEBUG
         NFX.sharedInstance().start()
         #endif
+        Fabric.with([Crashlytics.self])
         return true
     }
 }

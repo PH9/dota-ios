@@ -1,16 +1,25 @@
 PODS:
+  - Crashlytics (3.10.4):
+    - Fabric (~> 1.7.9)
+  - Fabric (1.7.9)
   - netfox (1.11.1)
 
 DEPENDENCIES:
+  - Crashlytics
+  - Fabric
   - netfox
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Crashlytics
+    - Fabric
     - netfox
 
 SPEC CHECKSUMS:
+  Crashlytics: 915a7787b84f635fb2a81f92a90e265c2c413f76
+  Fabric: a2917d3895e4c1569b9c3170de7320ea1b1e6661
   netfox: 5230196df3ca093a9418e079eb6e8f3776f15d14
 
-PODFILE CHECKSUM: 65fd1285dd09ffb066a0e5b498ca23b8219acbda
+PODFILE CHECKSUM: d2fc5172e3b606fb49e51ab42d0e212e288e5e65
 
 COCOAPODS: 1.5.3
