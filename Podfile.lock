@@ -3,23 +3,31 @@ PODS:
     - Fabric (~> 1.7.9)
   - Fabric (1.7.9)
   - netfox (1.11.1)
+  - R.swift (4.0.0):
+    - R.swift.Library (~> 4.0.0)
+  - R.swift.Library (4.0.0)
 
 DEPENDENCIES:
   - Crashlytics
   - Fabric
   - netfox
+  - R.swift
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Crashlytics
     - Fabric
     - netfox
+    - R.swift
+    - R.swift.Library
 
 SPEC CHECKSUMS:
   Crashlytics: 915a7787b84f635fb2a81f92a90e265c2c413f76
   Fabric: a2917d3895e4c1569b9c3170de7320ea1b1e6661
   netfox: 5230196df3ca093a9418e079eb6e8f3776f15d14
+  R.swift: d6a5ec2f55a8441dc0ed9f1f8b37d7d11ae85c66
+  R.swift.Library: c3af34921024333546e23b70e70d0b4e0cffca75
 
-PODFILE CHECKSUM: d2fc5172e3b606fb49e51ab42d0e212e288e5e65
+PODFILE CHECKSUM: ea5e606bb5ddb10d9e88a30758918b5bd7e81d66
 
 COCOAPODS: 1.5.3

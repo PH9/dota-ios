@@ -18,6 +18,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         #endif
         Fabric.with([Crashlytics.self])
+        setupRootViewController()
         return true
+    }
+
+    func setupRootViewController() {
+        let vc = SomethingViewController()
+        let window = UIWindow(frame: UIScreen.main.bounds)
+        window.rootViewController = vc
+        window.makeKeyAndVisible()
+        self.window = window
     }
 }

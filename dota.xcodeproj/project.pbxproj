@@ -20,6 +20,14 @@
 		6553168E21002CEF00A144B1 /* BarcodeScanner.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6553168D21002CEF00A144B1 /* BarcodeScanner.storyboard */; };
 		655772F020EB6022005BC2D8 /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655772EF20EB6022005BC2D8 /* Hero.swift */; };
 		655772F220EB613D005BC2D8 /* HeroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655772F120EB613D005BC2D8 /* HeroTests.swift */; };
+		6572FB3A21004AE3007D0FBB /* SomethingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6572FB3821004AE3007D0FBB /* SomethingCell.swift */; };
+		6572FB3B21004AE3007D0FBB /* SomethingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6572FB3921004AE3007D0FBB /* SomethingCell.xib */; };
+		6572FB3D21004C1B007D0FBB /* SomethingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6572FB3C21004C1B007D0FBB /* SomethingViewModel.swift */; };
+		6572FB3F21004C23007D0FBB /* Something.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6572FB3E21004C23007D0FBB /* Something.swift */; };
+		6572FB4121004CEB007D0FBB /* SomethingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6572FB4021004CEB007D0FBB /* SomethingViewController.swift */; };
+		6572FB44210054CB007D0FBB /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6572FB43210054CB007D0FBB /* R.generated.swift */; };
+		6572FB4621005633007D0FBB /* AnotherCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6572FB4521005633007D0FBB /* AnotherCell.xib */; };
+		6572FB4821005663007D0FBB /* AnotherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6572FB4721005663007D0FBB /* AnotherCell.swift */; };
 		658FB2A420EDFEE800D6E184 /* Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658FB2A320EDFEE800D6E184 /* Decodable.swift */; };
 		65970F8020EB5D0A00EAF5D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65970F7F20EB5D0A00EAF5D1 /* AppDelegate.swift */; };
 		65970F8220EB5D0A00EAF5D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65970F8120EB5D0A00EAF5D1 /* ViewController.swift */; };
@@ -54,6 +62,14 @@
 		6553168D21002CEF00A144B1 /* BarcodeScanner.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BarcodeScanner.storyboard; sourceTree = "<group>"; };
 		655772EF20EB6022005BC2D8 /* Hero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
 		655772F120EB613D005BC2D8 /* HeroTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroTests.swift; sourceTree = "<group>"; };
+		6572FB3821004AE3007D0FBB /* SomethingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomethingCell.swift; sourceTree = "<group>"; };
+		6572FB3921004AE3007D0FBB /* SomethingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SomethingCell.xib; sourceTree = "<group>"; };
+		6572FB3C21004C1B007D0FBB /* SomethingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomethingViewModel.swift; sourceTree = "<group>"; };
+		6572FB3E21004C23007D0FBB /* Something.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Something.swift; sourceTree = "<group>"; };
+		6572FB4021004CEB007D0FBB /* SomethingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomethingViewController.swift; sourceTree = "<group>"; };
+		6572FB43210054CB007D0FBB /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		6572FB4521005633007D0FBB /* AnotherCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnotherCell.xib; sourceTree = "<group>"; };
+		6572FB4721005663007D0FBB /* AnotherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnotherCell.swift; sourceTree = "<group>"; };
 		658FB2A320EDFEE800D6E184 /* Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decodable.swift; sourceTree = "<group>"; };
 		65970F7C20EB5D0A00EAF5D1 /* dota.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dota.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65970F7F20EB5D0A00EAF5D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -177,6 +193,20 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		6572FB3721004ABF007D0FBB /* Unknown */ = {
+			isa = PBXGroup;
+			children = (
+				6572FB4721005663007D0FBB /* AnotherCell.swift */,
+				6572FB4521005633007D0FBB /* AnotherCell.xib */,
+				6572FB3E21004C23007D0FBB /* Something.swift */,
+				6572FB3821004AE3007D0FBB /* SomethingCell.swift */,
+				6572FB3921004AE3007D0FBB /* SomethingCell.xib */,
+				6572FB4021004CEB007D0FBB /* SomethingViewController.swift */,
+				6572FB3C21004C1B007D0FBB /* SomethingViewModel.swift */,
+			);
+			path = Unknown;
+			sourceTree = "<group>";
+		};
 		65970F7320EB5D0A00EAF5D1 = {
 			isa = PBXGroup;
 			children = (
@@ -200,17 +230,21 @@
 		65970F7E20EB5D0A00EAF5D1 /* dota */ = {
 			isa = PBXGroup;
 			children = (
+				65970F7F20EB5D0A00EAF5D1 /* AppDelegate.swift */,
+				65970F8620EB5D0D00EAF5D1 /* Assets.xcassets */,
 				6553168C21002CBC00A144B1 /* BarcodeScanner */,
 				6553168921002B3100A144B1 /* Maps */,
 				654B6AF320F6FF9C00430992 /* Request */,
-				65186D8420EDD4250043F937 /* Library */,
-				655772EE20EB6017005BC2D8 /* Model */,
-				65970F7F20EB5D0A00EAF5D1 /* AppDelegate.swift */,
-				65970F8120EB5D0A00EAF5D1 /* ViewController.swift */,
-				65970F8320EB5D0A00EAF5D1 /* Main.storyboard */,
-				65970F8620EB5D0D00EAF5D1 /* Assets.xcassets */,
-				65970F8820EB5D0D00EAF5D1 /* LaunchScreen.storyboard */,
 				65970F8B20EB5D0D00EAF5D1 /* Info.plist */,
+				65970F8820EB5D0D00EAF5D1 /* LaunchScreen.storyboard */,
+				65186D8420EDD4250043F937 /* Library */,
+				65970F8320EB5D0A00EAF5D1 /* Main.storyboard */,
+				655772EE20EB6017005BC2D8 /* Model */,
+				6572FB43210054CB007D0FBB /* R.generated.swift */,
+				654B6AF320F6FF9C00430992 /* Request */,
+				6572FB34210049E1007D0FBB /* Services */,
+				6572FB3721004ABF007D0FBB /* Unknown */,
+				65970F8120EB5D0A00EAF5D1 /* ViewController.swift */,
 			);
 			path = dota;
 			sourceTree = "<group>";
@@ -231,6 +265,7 @@
 			buildConfigurationList = 65970F9920EB5D0D00EAF5D1 /* Build configuration list for PBXNativeTarget "dota" */;
 			buildPhases = (
 				FD310946B6DE739B0A2FA420 /* [CP] Check Pods Manifest.lock */,
+				6572FB422100543F007D0FBB /* Generate R.swift */,
 				65970F7820EB5D0A00EAF5D1 /* Sources */,
 				65970F7920EB5D0A00EAF5D1 /* Frameworks */,
 				65970F7A20EB5D0A00EAF5D1 /* Resources */,
@@ -279,6 +314,7 @@
 				TargetAttributes = {
 					65970F7B20EB5D0A00EAF5D1 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 0940;
 					};
 					65970F8F20EB5D0D00EAF5D1 = {
 						CreatedOnToolsVersion = 10.0;
@@ -314,7 +350,9 @@
 				65970F8720EB5D0D00EAF5D1 /* Assets.xcassets in Resources */,
 				6553168E21002CEF00A144B1 /* BarcodeScanner.storyboard in Resources */,
 				65970F8520EB5D0A00EAF5D1 /* Main.storyboard in Resources */,
+				6572FB3B21004AE3007D0FBB /* SomethingCell.xib in Resources */,
 				6553168B21002B3D00A144B1 /* Maps.storyboard in Resources */,
+				6572FB4621005633007D0FBB /* AnotherCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,6 +402,20 @@
 			shellPath = /bin/sh;
 			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
 		};
+		6572FB422100543F007D0FBB /* Generate R.swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate R.swift";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/dota/\"";
+		};
 		6CC4CB9B0E9F48DF18A00DE2 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -371,10 +423,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-dota-dotaTests/Pods-dota-dotaTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
 				"${BUILT_PRODUCTS_DIR}/netfox/netfox.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/netfox.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -389,10 +443,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-dota/Pods-dota-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
 				"${BUILT_PRODUCTS_DIR}/netfox/netfox.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/netfox.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -444,11 +500,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				65970F8220EB5D0A00EAF5D1 /* ViewController.swift in Sources */,
+				6572FB3D21004C1B007D0FBB /* SomethingViewModel.swift in Sources */,
 				654B6AF720F700E900430992 /* HeroesPresenter.swift in Sources */,
 				658FB2A420EDFEE800D6E184 /* Decodable.swift in Sources */,
+				6572FB4121004CEB007D0FBB /* SomethingViewController.swift in Sources */,
+				6572FB44210054CB007D0FBB /* R.generated.swift in Sources */,
 				65970F8020EB5D0A00EAF5D1 /* AppDelegate.swift in Sources */,
 				655772F020EB6022005BC2D8 /* Hero.swift in Sources */,
+				6572FB4821005663007D0FBB /* AnotherCell.swift in Sources */,
 				65F7C17820F751FD0071CC11 /* APIServiceError.swift in Sources */,
+				6572FB3F21004C23007D0FBB /* Something.swift in Sources */,
+				6572FB3A21004AE3007D0FBB /* SomethingCell.swift in Sources */,
 				65B01C7C21002DA7004F3FBD /* BarcodeScannerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -544,7 +606,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -598,7 +660,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -619,7 +681,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = dota/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
