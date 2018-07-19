@@ -20,6 +20,8 @@
 		6553168E21002CEF00A144B1 /* BarcodeScanner.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6553168D21002CEF00A144B1 /* BarcodeScanner.storyboard */; };
 		655772F020EB6022005BC2D8 /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655772EF20EB6022005BC2D8 /* Hero.swift */; };
 		655772F220EB613D005BC2D8 /* HeroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655772F120EB613D005BC2D8 /* HeroTests.swift */; };
+		6572FB30210033AE007D0FBB /* ZXingObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6572FB2F210033AE007D0FBB /* ZXingObjC.framework */; };
+		6572FB36210049F1007D0FBB /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6572FB35210049F1007D0FBB /* LocationService.swift */; };
 		6572FB3A21004AE3007D0FBB /* SomethingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6572FB3821004AE3007D0FBB /* SomethingCell.swift */; };
 		6572FB3B21004AE3007D0FBB /* SomethingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6572FB3921004AE3007D0FBB /* SomethingCell.xib */; };
 		6572FB3D21004C1B007D0FBB /* SomethingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6572FB3C21004C1B007D0FBB /* SomethingViewModel.swift */; };
@@ -62,6 +64,8 @@
 		6553168D21002CEF00A144B1 /* BarcodeScanner.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BarcodeScanner.storyboard; sourceTree = "<group>"; };
 		655772EF20EB6022005BC2D8 /* Hero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
 		655772F120EB613D005BC2D8 /* HeroTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroTests.swift; sourceTree = "<group>"; };
+		6572FB2F210033AE007D0FBB /* ZXingObjC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ZXingObjC.framework; path = Carthage/Build/iOS/ZXingObjC.framework; sourceTree = "<group>"; };
+		6572FB35210049F1007D0FBB /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 		6572FB3821004AE3007D0FBB /* SomethingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomethingCell.swift; sourceTree = "<group>"; };
 		6572FB3921004AE3007D0FBB /* SomethingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SomethingCell.xib; sourceTree = "<group>"; };
 		6572FB3C21004C1B007D0FBB /* SomethingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomethingViewModel.swift; sourceTree = "<group>"; };
@@ -96,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6572FB30210033AE007D0FBB /* ZXingObjC.framework in Frameworks */,
 				652F4B6B20F73EC700318511 /* OHHTTPStubs.framework in Frameworks */,
 				654D78E620F6F2F000C72544 /* ObjectMapper.framework in Frameworks */,
 				654D78E420F6F2E600C72544 /* Alamofire.framework in Frameworks */,
@@ -118,6 +123,7 @@
 		56C05F08A25AB203CD75B4CC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6572FB2F210033AE007D0FBB /* ZXingObjC.framework */,
 				65A9F8EE20F71346004748D3 /* Pods_dota_dotaTests.framework */,
 				654671F820F70EF6007ECFB6 /* OHHTTPStubs.framework */,
 				654D78E520F6F2F000C72544 /* ObjectMapper.framework */,
@@ -193,6 +199,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		6572FB34210049E1007D0FBB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				6572FB35210049F1007D0FBB /* LocationService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		6572FB3721004ABF007D0FBB /* Unknown */ = {
 			isa = PBXGroup;
 			children = (
@@ -233,12 +247,11 @@
 				65970F7F20EB5D0A00EAF5D1 /* AppDelegate.swift */,
 				65970F8620EB5D0D00EAF5D1 /* Assets.xcassets */,
 				6553168C21002CBC00A144B1 /* BarcodeScanner */,
-				6553168921002B3100A144B1 /* Maps */,
-				654B6AF320F6FF9C00430992 /* Request */,
 				65970F8B20EB5D0D00EAF5D1 /* Info.plist */,
 				65970F8820EB5D0D00EAF5D1 /* LaunchScreen.storyboard */,
 				65186D8420EDD4250043F937 /* Library */,
 				65970F8320EB5D0A00EAF5D1 /* Main.storyboard */,
+				6553168921002B3100A144B1 /* Maps */,
 				655772EE20EB6017005BC2D8 /* Model */,
 				6572FB43210054CB007D0FBB /* R.generated.swift */,
 				654B6AF320F6FF9C00430992 /* Request */,
@@ -391,12 +404,14 @@
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/ObjectMapper.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/OHHTTPStubs.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ZXingObjC.framework",
 			);
 			name = Carthage;
 			outputPaths = (
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Alamofire.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/ObjectMapper.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/OHHTTPStubs.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/ZXingObjC.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -502,6 +517,7 @@
 				65970F8220EB5D0A00EAF5D1 /* ViewController.swift in Sources */,
 				6572FB3D21004C1B007D0FBB /* SomethingViewModel.swift in Sources */,
 				654B6AF720F700E900430992 /* HeroesPresenter.swift in Sources */,
+				6572FB36210049F1007D0FBB /* LocationService.swift in Sources */,
 				658FB2A420EDFEE800D6E184 /* Decodable.swift in Sources */,
 				6572FB4121004CEB007D0FBB /* SomethingViewController.swift in Sources */,
 				6572FB44210054CB007D0FBB /* R.generated.swift in Sources */,
@@ -705,7 +721,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = dota/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

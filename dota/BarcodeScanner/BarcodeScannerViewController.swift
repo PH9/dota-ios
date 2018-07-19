@@ -1,5 +1,6 @@
 import UIKit
 import os.log
+import ZXingObjC
 
 class BarcodeScannerViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
@@ -8,9 +9,13 @@ class BarcodeScannerViewController: UIViewController, UIImagePickerControllerDel
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        barcodeImageView.isUserInteractionEnabled = true
+
+        let tapToSelectPhoto = UITapGestureRecognizer(target: self, action: #selector(BarcodeScannerViewController.selectPhotoFromLibrary))
+        barcodeImageView.addGestureRecognizer(tapToSelectPhoto)
     }
 
-    func selectPhotoFromLibrary() {
+    @objc func selectPhotoFromLibrary() {
         let picker = UIImagePickerController()
         picker.sourceType = .photoLibrary
         picker.delegate = self

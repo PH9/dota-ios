@@ -1,9 +1,13 @@
-//
-//  LocationService.swift
-//  dota
-//
-//  Created by Wasith Theerapattrathamrong on 19/7/2561 BE.
-//  Copyright © 2561 Wasith Theerapattrathamrong. All rights reserved.
-//
+import CoreLocation
 
-import Foundation
+class LocationService: NSObject, CLLocationManagerDelegate {
+    static let shared = LocationService()
+    let locationManager = CLLocationManager()
+
+    override init() {
+        super.init()
+        locationManager.delegate = self
+    }
+
+    
+}

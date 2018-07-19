@@ -1,4 +1,4 @@
 github "Hearst-DD/ObjectMapper" ~> 3.3
 github "Alamofire/Alamofire" ~> 4.7
 github "AliSoftware/OHHTTPStubs"
-github "AliSoftware/OHHTTPStubs/Swift"
+github "TheLevelUp/ZXingObjC" ~> 3.2
