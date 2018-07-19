@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Barcode Scanner View Controller-->
+        <scene sceneID="DQc-XS-IFz">
+            <objects>
+                <viewController storyboardIdentifier="BarcodeScannerViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="F3G-Ms-D3P" customClass="BarcodeScannerViewController" customModule="dota" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Y4f-pC-1s3"/>
+                        <viewControllerLayoutGuide type="bottom" id="Aq7-NW-EdH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="daW-p3-ge3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6JE-xh-suq">
+                                <rect key="frame" x="24" y="85" width="327" height="184"/>
+                                <color key="backgroundColor" red="0.60784313729999995" green="0.60784313729999995" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="6JE-xh-suq" secondAttribute="height" multiplier="16:9" id="sal-r5-6UO"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="เลือกรูปเพื่อหา Barcode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HIb-F0-muZ">
+                                <rect key="frame" x="103" y="40" width="169" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value จะแสดงตรงนี้" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qma-4k-PcA">
+                                <rect key="frame" x="117.5" y="293" width="140" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="6JE-xh-suq" secondAttribute="trailing" constant="24" id="1cy-NY-lYb"/>
+                            <constraint firstItem="6JE-xh-suq" firstAttribute="centerX" secondItem="daW-p3-ge3" secondAttribute="centerX" id="5b2-Qn-6wR"/>
+                            <constraint firstItem="HIb-F0-muZ" firstAttribute="top" secondItem="Y4f-pC-1s3" secondAttribute="bottom" constant="20" id="781-aM-GXK"/>
+                            <constraint firstItem="6JE-xh-suq" firstAttribute="top" secondItem="HIb-F0-muZ" secondAttribute="bottom" constant="24" id="Iba-cr-eZZ"/>
+                            <constraint firstItem="Qma-4k-PcA" firstAttribute="centerX" secondItem="daW-p3-ge3" secondAttribute="centerX" id="O3D-L3-xhN"/>
+                            <constraint firstItem="Qma-4k-PcA" firstAttribute="top" secondItem="6JE-xh-suq" secondAttribute="bottom" constant="24" id="ZRb-KG-Ww4"/>
+                            <constraint firstItem="6JE-xh-suq" firstAttribute="leading" secondItem="daW-p3-ge3" secondAttribute="leading" constant="24" id="aJ6-Yr-cTg"/>
+                            <constraint firstItem="HIb-F0-muZ" firstAttribute="centerX" secondItem="daW-p3-ge3" secondAttribute="centerX" id="tJg-PS-zad"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="barcodeImageView" destination="6JE-xh-suq" id="eIF-wn-DU8"/>
+                        <outlet property="barcodeValueLabel" destination="Qma-4k-PcA" id="QuY-kE-odu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fua-kH-cC7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-127.2" y="156.97151424287858"/>
+        </scene>
+    </scenes>
+</document>

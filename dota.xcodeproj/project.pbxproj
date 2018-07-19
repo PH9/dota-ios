@@ -17,6 +17,7 @@
 		654D78E420F6F2E600C72544 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 654D78E320F6F2E500C72544 /* Alamofire.framework */; };
 		654D78E620F6F2F000C72544 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 654D78E520F6F2F000C72544 /* ObjectMapper.framework */; };
 		6553168B21002B3D00A144B1 /* Maps.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6553168A21002B3D00A144B1 /* Maps.storyboard */; };
+		6553168E21002CEF00A144B1 /* BarcodeScanner.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6553168D21002CEF00A144B1 /* BarcodeScanner.storyboard */; };
 		655772F020EB6022005BC2D8 /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655772EF20EB6022005BC2D8 /* Hero.swift */; };
 		655772F220EB613D005BC2D8 /* HeroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655772F120EB613D005BC2D8 /* HeroTests.swift */; };
 		658FB2A420EDFEE800D6E184 /* Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658FB2A320EDFEE800D6E184 /* Decodable.swift */; };
@@ -27,6 +28,7 @@
 		65970F8A20EB5D0D00EAF5D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65970F8820EB5D0D00EAF5D1 /* LaunchScreen.storyboard */; };
 		65A9F8EF20F71346004748D3 /* Pods_dota_dotaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65A9F8EE20F71346004748D3 /* Pods_dota_dotaTests.framework */; };
 		65A9F8F220F71420004748D3 /* Heroes.json in Resources */ = {isa = PBXBuildFile; fileRef = 65A9F8F020F7141A004748D3 /* Heroes.json */; };
+		65B01C7C21002DA7004F3FBD /* BarcodeScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B01C7B21002DA7004F3FBD /* BarcodeScannerViewController.swift */; };
 		65F7C17820F751FD0071CC11 /* APIServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F7C17720F751FD0071CC11 /* APIServiceError.swift */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +51,7 @@
 		654D78E320F6F2E500C72544 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		654D78E520F6F2F000C72544 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
 		6553168A21002B3D00A144B1 /* Maps.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Maps.storyboard; sourceTree = "<group>"; };
+		6553168D21002CEF00A144B1 /* BarcodeScanner.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BarcodeScanner.storyboard; sourceTree = "<group>"; };
 		655772EF20EB6022005BC2D8 /* Hero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
 		655772F120EB613D005BC2D8 /* HeroTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroTests.swift; sourceTree = "<group>"; };
 		658FB2A320EDFEE800D6E184 /* Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decodable.swift; sourceTree = "<group>"; };
@@ -63,6 +66,7 @@
 		65970F9620EB5D0D00EAF5D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65A9F8EE20F71346004748D3 /* Pods_dota_dotaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_dota_dotaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		65A9F8F020F7141A004748D3 /* Heroes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Heroes.json; sourceTree = "<group>"; };
+		65B01C7B21002DA7004F3FBD /* BarcodeScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeScannerViewController.swift; sourceTree = "<group>"; };
 		65F7C17720F751FD0071CC11 /* APIServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceError.swift; sourceTree = "<group>"; };
 		847633A8F96D7F55CD040597 /* Pods-dota-dotaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dota-dotaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-dota-dotaTests/Pods-dota-dotaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		862A04EB63280BF72C6FAEDC /* Pods-dota.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dota.debug.xcconfig"; path = "Pods/Target Support Files/Pods-dota/Pods-dota.debug.xcconfig"; sourceTree = "<group>"; };
@@ -154,6 +158,15 @@
 			path = Maps;
 			sourceTree = "<group>";
 		};
+		6553168C21002CBC00A144B1 /* BarcodeScanner */ = {
+			isa = PBXGroup;
+			children = (
+				6553168D21002CEF00A144B1 /* BarcodeScanner.storyboard */,
+				65B01C7B21002DA7004F3FBD /* BarcodeScannerViewController.swift */,
+			);
+			path = BarcodeScanner;
+			sourceTree = "<group>";
+		};
 		655772EE20EB6017005BC2D8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -187,6 +200,7 @@
 		65970F7E20EB5D0A00EAF5D1 /* dota */ = {
 			isa = PBXGroup;
 			children = (
+				6553168C21002CBC00A144B1 /* BarcodeScanner */,
 				6553168921002B3100A144B1 /* Maps */,
 				654B6AF320F6FF9C00430992 /* Request */,
 				65186D8420EDD4250043F937 /* Library */,
@@ -298,6 +312,7 @@
 			files = (
 				65970F8A20EB5D0D00EAF5D1 /* LaunchScreen.storyboard in Resources */,
 				65970F8720EB5D0D00EAF5D1 /* Assets.xcassets in Resources */,
+				6553168E21002CEF00A144B1 /* BarcodeScanner.storyboard in Resources */,
 				65970F8520EB5D0A00EAF5D1 /* Main.storyboard in Resources */,
 				6553168B21002B3D00A144B1 /* Maps.storyboard in Resources */,
 			);
@@ -434,6 +449,7 @@
 				65970F8020EB5D0A00EAF5D1 /* AppDelegate.swift in Sources */,
 				655772F020EB6022005BC2D8 /* Hero.swift in Sources */,
 				65F7C17820F751FD0071CC11 /* APIServiceError.swift in Sources */,
+				65B01C7C21002DA7004F3FBD /* BarcodeScannerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
