@@ -16,6 +16,7 @@
 		654B6AF720F700E900430992 /* HeroesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654B6AF620F700E900430992 /* HeroesPresenter.swift */; };
 		654D78E420F6F2E600C72544 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 654D78E320F6F2E500C72544 /* Alamofire.framework */; };
 		654D78E620F6F2F000C72544 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 654D78E520F6F2F000C72544 /* ObjectMapper.framework */; };
+		6553168B21002B3D00A144B1 /* Maps.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6553168A21002B3D00A144B1 /* Maps.storyboard */; };
 		655772F020EB6022005BC2D8 /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655772EF20EB6022005BC2D8 /* Hero.swift */; };
 		655772F220EB613D005BC2D8 /* HeroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655772F120EB613D005BC2D8 /* HeroTests.swift */; };
 		658FB2A420EDFEE800D6E184 /* Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658FB2A320EDFEE800D6E184 /* Decodable.swift */; };
@@ -47,6 +48,7 @@
 		654B6AF620F700E900430992 /* HeroesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesPresenter.swift; sourceTree = "<group>"; };
 		654D78E320F6F2E500C72544 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		654D78E520F6F2F000C72544 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
+		6553168A21002B3D00A144B1 /* Maps.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Maps.storyboard; sourceTree = "<group>"; };
 		655772EF20EB6022005BC2D8 /* Hero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
 		655772F120EB613D005BC2D8 /* HeroTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroTests.swift; sourceTree = "<group>"; };
 		658FB2A320EDFEE800D6E184 /* Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decodable.swift; sourceTree = "<group>"; };
@@ -144,6 +146,14 @@
 			path = Request;
 			sourceTree = "<group>";
 		};
+		6553168921002B3100A144B1 /* Maps */ = {
+			isa = PBXGroup;
+			children = (
+				6553168A21002B3D00A144B1 /* Maps.storyboard */,
+			);
+			path = Maps;
+			sourceTree = "<group>";
+		};
 		655772EE20EB6017005BC2D8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -177,6 +187,7 @@
 		65970F7E20EB5D0A00EAF5D1 /* dota */ = {
 			isa = PBXGroup;
 			children = (
+				6553168921002B3100A144B1 /* Maps */,
 				654B6AF320F6FF9C00430992 /* Request */,
 				65186D8420EDD4250043F937 /* Library */,
 				655772EE20EB6017005BC2D8 /* Model */,
@@ -288,6 +299,7 @@
 				65970F8A20EB5D0D00EAF5D1 /* LaunchScreen.storyboard in Resources */,
 				65970F8720EB5D0D00EAF5D1 /* Assets.xcassets in Resources */,
 				65970F8520EB5D0A00EAF5D1 /* Main.storyboard in Resources */,
+				6553168B21002B3D00A144B1 /* Maps.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
