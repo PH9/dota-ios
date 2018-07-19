@@ -13,7 +13,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
         #if DEBUG
-        NFX.sharedInstance().start()
+        DispatchQueue.main.async {
+            NFX.sharedInstance().start()
+        }
         #endif
         Fabric.with([Crashlytics.self])
         return true
