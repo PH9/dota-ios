@@ -10,6 +10,10 @@
 		5745DDB73C77FFAA62913D88 /* Pods_dota.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E477CD6D5BED5A4C454C27DA /* Pods_dota.framework */; };
 		65186D8320EDD3A30043F937 /* HeroTests.json in Resources */ = {isa = PBXBuildFile; fileRef = 65186D8120EDD3990043F937 /* HeroTests.json */; };
 		65186D8720EDD44B0043F937 /* JSONFileReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65186D8620EDD44B0043F937 /* JSONFileReader.swift */; };
+		652BA2E121006DC100D0607A /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652BA2DF21006DC100D0607A /* ContactsViewController.swift */; };
+		652BA2E221006DC100D0607A /* Contacts.xib in Resources */ = {isa = PBXBuildFile; fileRef = 652BA2E021006DC100D0607A /* Contacts.xib */; };
+		652BA2E421008A1D00D0607A /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652BA2E321008A1D00D0607A /* LocationViewController.swift */; };
+		652BA2E621008A2400D0607A /* Location.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 652BA2E521008A2400D0607A /* Location.storyboard */; };
 		652F4B6B20F73EC700318511 /* OHHTTPStubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 654671F820F70EF6007ECFB6 /* OHHTTPStubs.framework */; };
 		652F4B6C20F73EFF00318511 /* OHHTTPStubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 654671F820F70EF6007ECFB6 /* OHHTTPStubs.framework */; };
 		654671F720F70B5C007ECFB6 /* HeroPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654671F620F70B5C007ECFB6 /* HeroPresenterTests.swift */; };
@@ -55,6 +59,10 @@
 /* Begin PBXFileReference section */
 		65186D8120EDD3990043F937 /* HeroTests.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = HeroTests.json; sourceTree = "<group>"; };
 		65186D8620EDD44B0043F937 /* JSONFileReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONFileReader.swift; sourceTree = "<group>"; };
+		652BA2DF21006DC100D0607A /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
+		652BA2E021006DC100D0607A /* Contacts.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Contacts.xib; sourceTree = "<group>"; };
+		652BA2E321008A1D00D0607A /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		652BA2E521008A2400D0607A /* Location.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Location.storyboard; sourceTree = "<group>"; };
 		654671F620F70B5C007ECFB6 /* HeroPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroPresenterTests.swift; sourceTree = "<group>"; };
 		654671F820F70EF6007ECFB6 /* OHHTTPStubs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OHHTTPStubs.framework; path = Carthage/Build/iOS/OHHTTPStubs.framework; sourceTree = "<group>"; };
 		654B6AF620F700E900430992 /* HeroesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesPresenter.swift; sourceTree = "<group>"; };
@@ -161,6 +169,15 @@
 			path = TestUtils;
 			sourceTree = "<group>";
 		};
+		652BA2DE21006D8B00D0607A /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				652BA2E021006DC100D0607A /* Contacts.xib */,
+				652BA2DF21006DC100D0607A /* ContactsViewController.swift */,
+			);
+			path = Contacts;
+			sourceTree = "<group>";
+		};
 		654B6AF320F6FF9C00430992 /* Request */ = {
 			isa = PBXGroup;
 			children = (
@@ -202,7 +219,9 @@
 		6572FB34210049E1007D0FBB /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				652BA2E521008A2400D0607A /* Location.storyboard */,
 				6572FB35210049F1007D0FBB /* LocationService.swift */,
+				652BA2E321008A1D00D0607A /* LocationViewController.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -244,6 +263,7 @@
 		65970F7E20EB5D0A00EAF5D1 /* dota */ = {
 			isa = PBXGroup;
 			children = (
+				652BA2DE21006D8B00D0607A /* Contacts */,
 				65970F7F20EB5D0A00EAF5D1 /* AppDelegate.swift */,
 				65970F8620EB5D0D00EAF5D1 /* Assets.xcassets */,
 				6553168C21002CBC00A144B1 /* BarcodeScanner */,
@@ -360,7 +380,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				65970F8A20EB5D0D00EAF5D1 /* LaunchScreen.storyboard in Resources */,
+				652BA2E221006DC100D0607A /* Contacts.xib in Resources */,
 				65970F8720EB5D0D00EAF5D1 /* Assets.xcassets in Resources */,
+				652BA2E621008A2400D0607A /* Location.storyboard in Resources */,
 				6553168E21002CEF00A144B1 /* BarcodeScanner.storyboard in Resources */,
 				65970F8520EB5D0A00EAF5D1 /* Main.storyboard in Resources */,
 				6572FB3B21004AE3007D0FBB /* SomethingCell.xib in Resources */,
@@ -528,6 +550,8 @@
 				6572FB3F21004C23007D0FBB /* Something.swift in Sources */,
 				6572FB3A21004AE3007D0FBB /* SomethingCell.swift in Sources */,
 				65B01C7C21002DA7004F3FBD /* BarcodeScannerViewController.swift in Sources */,
+				652BA2E121006DC100D0607A /* ContactsViewController.swift in Sources */,
+				652BA2E421008A1D00D0607A /* LocationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

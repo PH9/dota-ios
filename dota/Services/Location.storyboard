@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="0Ga-vx-1NI">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Location View Controller-->
+        <scene sceneID="hWj-Xq-dba">
+            <objects>
+                <viewController storyboardIdentifier="LocationViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="0Ga-vx-1NI" customClass="LocationViewController" customModule="dota" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zlU-HL-Qf5"/>
+                        <viewControllerLayoutGuide type="bottom" id="Haw-Tj-sTP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MfX-Rl-IUI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lat: 0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jaL-bo-jNC">
+                                <rect key="frame" x="16" y="40" width="68" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lon: 0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="irM-gi-md4">
+                                <rect key="frame" x="16" y="69" width="72" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="irM-gi-md4" firstAttribute="leading" secondItem="MfX-Rl-IUI" secondAttribute="leading" constant="16" id="14S-2e-YGk"/>
+                            <constraint firstItem="jaL-bo-jNC" firstAttribute="top" secondItem="zlU-HL-Qf5" secondAttribute="bottom" constant="20" id="Cyy-vu-HpY"/>
+                            <constraint firstItem="irM-gi-md4" firstAttribute="top" secondItem="jaL-bo-jNC" secondAttribute="bottom" constant="8" id="K8i-NE-U9h"/>
+                            <constraint firstItem="jaL-bo-jNC" firstAttribute="leading" secondItem="MfX-Rl-IUI" secondAttribute="leading" constant="16" id="edt-3d-8qh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="latLabel" destination="jaL-bo-jNC" id="vvX-SM-KEp"/>
+                        <outlet property="lonLabel" destination="irM-gi-md4" id="Fc9-G9-Wsu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i3O-Hc-3j4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-57" y="64"/>
+        </scene>
+    </scenes>
+</document>

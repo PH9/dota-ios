@@ -23,7 +23,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func setupRootViewController() {
-        let vc = SomethingViewController()
+        let storyboard = UIStoryboard(name: "Location", bundle: nil)
+        let vc = storyboard.instantiateInitialViewController()
         let window = UIWindow(frame: UIScreen.main.bounds)
         window.rootViewController = vc
         window.makeKeyAndVisible()
